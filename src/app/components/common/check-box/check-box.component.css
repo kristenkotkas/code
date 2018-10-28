@@ -1,0 +1,39 @@
+.checkbox {
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  background: #ffffff;
+  border-radius: 0.5em;
+  margin-left: 1em;
+}
+
+.label {
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 0.5em;
+  font-family: "Century Gothic";
+  font-weight: normal;
+  color: #ffffff;
+}
+
+.label a {
+  vertical-align: super;
+}
+
+fa-icon {
+  position: absolute;
+  top: -0.3em;
+  left: 1.3em;
+}
+
+.check-container {
+  position: relative;
+}
+
+.check-container:hover .checkbox {
+  background: #ffffffaa;
+}
+
+.check:hover {
+  cursor: pointer;
+}

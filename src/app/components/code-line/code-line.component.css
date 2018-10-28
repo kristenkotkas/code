@@ -1,10 +1,16 @@
+.code-line {
+  margin: 0.2em 0;
+}
+
 .code-line-text {
-  color: #343434;
+  color: #000000;
   font-family: monospace;
-  background: #ffffff44;
+  background: #ffffff66;
   border-radius: 1em;
   padding: 0.4em 1em;
-  margin: 0.7em 0;
+  overflow-wrap: break-word;
+  display: block;
+  min-height: 1.2em;
 }
 
 .code-line-text:hover {
@@ -13,7 +19,7 @@
 
 .active {
   font-weight: bold;
-  background: white;
+  background: orange;
   padding: 0.2em;
   border-radius: inherit;
 }

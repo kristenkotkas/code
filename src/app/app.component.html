@@ -1,6 +1,14 @@
 <div>
-  <textarea name="" id="" cols="30" rows="10" (keyup)="updateText($event)"></textarea>
-  <input type="text" (keyup)="updateSearch($event)">
+  <textarea placeholder="insert text" name="" id="" cols="30" rows="10" (keyup)="updateText($event)"></textarea>
+
+  <div class="sticky-container">
+    <input placeholder="insert search" class="search-input" type="text" (keyup)="updateSearch($event)">
+    <app-check-box *ngFor="let checkInfo of checks"
+                   (checkEvent)="checkOnChange($event)"
+                   [checkInfo]="checkInfo"></app-check-box>
+    <app-sort (activeSortEmitter)="changeActiveSort($event)"></app-sort>
+  </div>
+
   <div *ngFor="let codeLine of codeLines">
     <app-code-line [codeLine]="codeLine"
                    [searchText]="searchText"></app-code-line>

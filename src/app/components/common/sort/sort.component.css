@@ -1,0 +1,8 @@
+.sort {
+  margin-left: 1em;
+}
+
+.sort:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}

@@ -3,6 +3,7 @@ export enum LineType {
   INFO = 'INFO',
   WARN = 'WARN',
   ERROR = 'ERROR',
-  NON_TYPE = 'NON_TYPE'
+  NON_TYPE = 'NON_TYPE',
+  TRACE = 'TRACE'
 
 }

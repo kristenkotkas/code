@@ -1,0 +1,7 @@
+<span class="check" (click)="checkOnClick()">
+  <span class="check-container">
+    <fa-icon *ngIf="checkInfo.isChecked" [icon]="faCheck"></fa-icon>
+    <span class="checkbox"></span>
+  </span>
+  <span class="label"><a>{{checkInfo.label}}</a></span>
+</span>
